@@ -16,7 +16,7 @@ The onboarding guide is to address onboarding challenges, including access contr
 * Using cost allocation tagging and Application Inference Profile(s) (aka AIPs, by Amazon Bedrock) to provide per-developer granularity usage tracking
 * Using Attribute-based Access Control (ABAC) on AIP resources, with integration on AWS Identity Center. 
     * Least-privilege access on IAM. 
-* Using Cost Explorer to view daily usage, and Cost Anomaly Detection to monitor daily usage.
+* Using Cost Explorer to view daily usage, and AWS Budgets (, or Cost Anomaly Detection) to monitor daily usage.
 
 
 
