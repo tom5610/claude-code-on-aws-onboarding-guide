@@ -33,7 +33,7 @@ wheels = [
 [[package]]
 name = "claude-code-on-aws-onboarding-guide"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "boto3" },
     { name = "jinja2" },

@@ -10,3 +10,16 @@ dependencies = [
     "rich>=14.2.0",
     "typer>=0.20.0",
 ]
+
+
+[project.scripts]
+claude-code-og = "claude_code_og.cli:app"
+
+
+[tool.setuptools]
+packages = ["claude_code_og"]
+package-dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
