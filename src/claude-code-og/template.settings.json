@@ -1,0 +1,10 @@
+{
+    "awsAuthRefresh": "aws sso login --profile {{ AWS_PROFILE }}",
+    "env": {
+        "CLAUDE_CODE_USE_BEDROCK": "1",
+        "AWS_PROFILE": "{{ AWS_PROFILE }}",
+        "ANTHROPIC_MODEL": "{{ ANTHROPIC_MODEL }}",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "{{ ANTHROPIC_DEFAULT_HAIKU_MODEL }}",
+        "AWS_REGION": "{{ AWS_REGION }}"
+    }
+}
