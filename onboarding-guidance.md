@@ -52,13 +52,23 @@ For Claude Code usage, we are aiming at creating related AIPs per developer. AIP
 
 The toolkit [claude-code-on-aws-onboarding-guide](https://github.com/tom5610/claude-code-on-aws-onboarding-guide) provides CLI commands to manage AIPs per specific resource tags. 
 
+install uv and sync
 
 ```
-# Create AIP with tags
-claude-code-og admin --tags '{"Team": "DevTeam", "DeveloperId": "dev123"}'
-
+uv sync
 ```
 
+sample command to create Application Inference Profile
+
+```
+uv run main.py admin create-aip --name adrianl-claude-sonnet-3-7 --tags '{"Team": "cloud-engineering", "DeveloperId": "AdrianL"}'
+```
+
+to setup at client side
+
+```
+uv run main.py client setup --tags '{"Team": "cloud-engineering", "DeveloperId": "AdrianL"}'
+```
 
 Once an AIP is created, in next 24hrs, the related tags will be available on Cost Allocation Tags console (Billing and Cost Management - Cost Allocation Tags). 
 
